@@ -1,17 +1,25 @@
 {
   "name": "playwright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto de automação com Playwright e Allure",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx playwright install-deps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:playwright-line": "npx playwright test --reporter=line",
+    "test:playwright-html": "npx playwright test --reporter=html",
+    "test:playwright-allure": "npx playwright test --reporter=allure-playwright",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "@playwright/test": "^1.54.2",
-    "playwright": "^1.54.2"
+    "playwright": "^1.54.2",
+    "allure-playwright": "^2.0.0",
+    "allure-commandline": "^2.13.9"
   }
 }

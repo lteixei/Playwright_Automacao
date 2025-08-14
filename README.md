@@ -1,4 +1,5 @@
 <img width="544" height="92" alt="image" src="https://github.com/user-attachments/assets/fdae7595-341b-4593-af24-92c82d025e36" />
+
 Este projeto demonstra como usar o Playwright para automatizar testes de navegador.
 
 ## Instalação

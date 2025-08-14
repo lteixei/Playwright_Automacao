@@ -5,8 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "preinstall": "npx playwright install-deps",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "test:playwright-line": "npx playwright test --reporter=line",
     "test:playwright-html": "npx playwright test --reporter=html",
     "test:playwright-allure": "npx playwright test --reporter=allure-playwright",
@@ -16,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@playwright/test": "^1.54.2",
     "playwright": "^1.54.2",
     "allure-playwright": "^2.0.0",

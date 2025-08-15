@@ -75,6 +75,7 @@ pytest --html=report.html
 ---
 
 ## 🗂️ Estrutura Sugerida  
+
 📦 playwright-automation/  
 ├── 📁 tests/                   # Casos de testes  
 │   ├── test_login.py  
@@ -89,6 +90,7 @@ pytest --html=report.html
 ---
 
 ## ✅ Boas Práticas  
+
 Dica	Explicação  
 Utilize Page Object Model -	Para melhor organização e reuso de elementos;  
 Trabalhe com fixtures -	Para dados dinâmicos ou login reutilizável;  
@@ -99,6 +101,7 @@ Não use sleep() - O Playwright já possui auto-wait embutido.
 ---
 
 ## 🔎 Exemplo de Teste
+
 from playwright.sync_api import Page  
 
 def test_login(page: Page):  
@@ -111,18 +114,25 @@ def test_login(page: Page):
 ---
 
 ## 🔮 Possíveis Melhorias Futuras  
+
 Item	Descrição  
-✅ Integração com GitHub Actions	Execução automática na esteira  
-✅ Video recording	Habilitar record_video=true nas fixtures  
-🔧 Paralelização personalizada	Ajustar --numprocesses no pytest  
-🔧 Testes cross-browser	Rodar em WebKit e Firefox no CI  
+✅ Integração com GitHub Actions  
+✅Execução automática na esteira  
+✅ Video recording  
+✅Habilitar record_video=true nas fixtures  
+🔧 Paralelização personalizada  
+🔧Ajustar --numprocesses no pytest  
+🔧 Testes cross-browser  
+🔧Rodar em WebKit e Firefox no CI  
 
 ---
 
-## 🤝 Contribuição  
+## 🤝 Boas práticas para contribuições:  
 
-Contribuições são bem-vindas!  
-Abra uma issue ou envie um Pull Request caso queira sugerir melhorias ou implementar novas features.  
+📌 Escreva código limpo, legível e documentado.  
+📌 Teste suas mudanças antes de enviar o Pull Request.  
+📌 Mantenha a consistência com o estilo e padrões do projeto.  
+📌 Discuta melhorias ou dúvidas antes de implementar grandes mudanças.
 
 ---
 

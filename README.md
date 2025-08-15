@@ -44,32 +44,32 @@ source venv/bin/activate
 
 ---
 
-## 📦 Instalação - Dependências Python  
+## 📦 Instalação - Dependências Python 
 pip install playwright pytest  
 
 ---
 
-## Instalar os navegadores suportados  
+## 📦 Instalar os navegadores suportados 
 playwright install  
 
 ---
 
-## ▶️ Executando os Testes  
+## ▶️ Executando os Testes 
 pytest  
 
 ---
 
-## Especificar um arquivo de teste  
+## 📦 Especificar um arquivo de teste 
 pytest tests/test_login.py  
 
 ---
 
-## Executar testes em modo headless = false (exibir navegador)  
+## 📦 Executar testes em modo headless = false (exibir navegador) 
 pytest --headed  
 
 ---
 
-## Gerar relatório em HTML  
+## 📦 Gerar relatório em HTML 
 pytest --html=report.html  
 
 ---
@@ -90,7 +90,7 @@ pytest --html=report.html
 
 ## ✅ Boas Práticas  
 Dica	Explicação  
-Utilize Page Object Model	Organização e reuso de elementos  
+Utilize Page Object Model 	Organização e reuso de elementos  
 Trabalhe com fixtures	Para dados dinâmicos ou login reutilizável  
 Use o modo trace	Facilita debugging com gravação passo a passo  
 Configure CI/CD	Para rodar testes automaticamente em cada PR  

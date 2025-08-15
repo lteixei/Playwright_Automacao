@@ -1,6 +1,7 @@
 // Import no topo do arquivo
 import { test, expect } from '@playwright/test';
 
+
 //########################################################
 //############################ ACCORDION #################
 //########################################################
@@ -22,7 +23,7 @@ test('Entrar no site automationtesting - AUTOCOMPLETE', async ({ page }) => {
   await page.fill('input.ui-autocomplete-input', 'BRAZIL');
 
   const brazilOption = page.locator('xpath=/html/body/section/div[1]/div[2]/div[2]/ul/li/a');
-  await brazilOption.waitFor({ state: 'visible', timeout: 2000 });
+  await brazilOption.waitFor({ state: 'visible', timeout: 5000 });
   await brazilOption.click();
 });
 
@@ -33,7 +34,7 @@ test('Entrar no site automationtesting - DATEPICKER HOJE', async ({ page }) => {
   await page.goto('https://demo.automationtesting.in/Datepicker.html', { timeout: 60000 });
 
   await page.locator('xpath=/html/body/section/div[1]/div/div/form/div[2]/div[2]/img').click();
-  await page.locator('//*[@id="ui-datepicker-div"]/table/tbody/tr[3]/td[5]/a').click();
+  await page.locator('xpath=//*[@id="ui-datepicker-div"]/table/tbody/tr[3]/td[5]/a').click();
 });
 
 //########################################################
@@ -42,7 +43,7 @@ test('Entrar no site automationtesting - DATEPICKER HOJE', async ({ page }) => {
 test('Entrar no site automationtesting - DATEPICKER NASCIMENTO', async ({ page }) => {
   await page.goto('https://demo.automationtesting.in/Datepicker.html', { timeout: 60000 });
 
-  await page.fill('//*[@id="datepicker2"]', '10/12/1976');
+  await page.fill('xpath=//*[@id="datepicker2"]', '10/12/1976');
 });
 
 //########################################################

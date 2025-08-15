@@ -1,4 +1,4 @@
-// Import no topo do arquivo
+// Import no topo do arquivo usando import
 import { test, expect } from '@playwright/test';
 
 test('Entrar no site automationtesting - Home', async ({ page }) => {

@@ -40,27 +40,40 @@ python -m venv venv
 venv\Scripts\activate
 # Linux / Mac
 source venv/bin/activate
+```
 
+---
 
 ## 📦 Instalação
 # Instalar dependências Python
 pip install playwright pytest
 
+---
+
 # Instalar os navegadores suportados
 playwright install
 
+---
+
 ## ▶️ Executando os Testes
-# Executar todos os testes
 pytest
+
+---
 
 # Especificar um arquivo de teste
 pytest tests/test_login.py
 
+---
+
 # Executar testes em modo headless = false (exibir navegador)
 pytest --headed
 
+---
+
 # Gerar relatório em HTML
 pytest --html=report.html
+
+---
 
 ## 🗂️ Estrutura Sugerida
 📦 playwright-automation/
@@ -74,6 +87,8 @@ pytest --html=report.html
 ├── requirements.txt
 └── README.md
 
+---
+
 ## ✅ Boas Práticas
 Dica	Explicação
 Utilize Page Object Model	Organização e reuso de elementos
@@ -81,6 +96,9 @@ Trabalhe com fixtures	Para dados dinâmicos ou login reutilizável
 Use o modo trace	Facilita debugging com gravação passo a passo
 Configure CI/CD	Para rodar testes automaticamente em cada PR
 Não use sleep()	O Playwright já possui auto-wait embutido
+
+---
+
 ## 🔎 Exemplo de Teste
 from playwright.sync_api import Page
 
@@ -91,16 +109,23 @@ def test_login(page: Page):
     page.click("#login")
     page.wait_for_selector("text=Bem-vindo")
 
+---
+
 ## 🔮 Possíveis Melhorias Futuras
 Item	Descrição
 ✅ Integração com GitHub Actions	Execução automática na esteira
 ✅ Video recording	Habilitar record_video=true nas fixtures
 🔧 Paralelização personalizada	Ajustar --numprocesses no pytest
 🔧 Testes cross-browser	Rodar em WebKit e Firefox no CI
-🤝 Contribuição
+
+---
+
+## 🤝 Contribuição
 
 Contribuições são bem-vindas!
 Abra uma issue ou envie um Pull Request caso queira sugerir melhorias ou implementar novas features.
+
+---
 
 ## 📄 Licença
 

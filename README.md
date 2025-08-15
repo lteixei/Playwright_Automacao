@@ -94,7 +94,7 @@ Utilize Page Object Model -	Para melhor organização e reuso de elementos;
 Trabalhe com fixtures -	Para dados dinâmicos ou login reutilizável;  
 Use o modo trace - Facilita debugging com gravação passo a passo;  
 Configure CI/CD	- Para rodar testes automaticamente em cada PR;  
-Não use sleep() -O Playwright já possui auto-wait embutido.  
+Não use sleep() - O Playwright já possui auto-wait embutido.  
 
 ---
 

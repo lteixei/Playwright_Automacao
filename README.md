@@ -33,14 +33,11 @@ O objetivo é fornecer um ponto de partida completo para criação de testes aut
 - ✅ Node.js instalado (para instalar os navegadores Playwright)  
 - ✅ Git instalado  
 - ✅ Ambiente virtual (recomendado)  
-
-```bash
 python -m venv venv
-# Windows
+### Windows
 venv\Scripts\activate
-# Linux / Mac
+### Linux / Mac
 source venv/bin/activate
-```
 
 ---
 

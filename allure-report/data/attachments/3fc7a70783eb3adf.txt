@@ -1,0 +1,1 @@
+Nova janela foi aberta. URL: https://www.selenium.dev/

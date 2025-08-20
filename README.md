@@ -32,10 +32,18 @@ O objetivo é fornecer um ponto de partida completo para criação de testes aut
 - ✅ Python 3.10+ instalado  
 - ✅ Node.js instalado (para instalar os navegadores Playwright)  
 - ✅ Git instalado  
-- ✅ Ambiente virtual (recomendado)  
+- ✅ Ambiente virtual (recomendado)
+
+---
+
+## 📦Criar e ativar o ambiente virtual:  
+### Criar ambiente virtual
 python -m venv venv
+python -m venv venv
+
 ### Windows
 venv\Scripts\activate
+
 ### Linux / Mac
 source venv/bin/activate
 
@@ -100,7 +108,7 @@ Não use sleep() - O Playwright já possui auto-wait embutido.
 ## 🔎 Exemplo de Teste
 
 from playwright.sync_api import Page  
-
+  
 def test_login(page: Page):  
     page.goto("https://exemplo.com")  
     page.fill("#username", "usuario_teste")  
@@ -110,22 +118,14 @@ def test_login(page: Page):
 
 ---
 
-## 🔮 Possíveis Melhorias Futuras  
+## 🤝 Contribuição
 
-Item	Descrição  
-✅ Integração com GitHub Actions  
-✅Execução automática na esteira  
-✅ Video recording  
-✅Habilitar record_video=true nas fixtures  
-🔧 Paralelização personalizada  
-🔧Ajustar --numprocesses no pytest  
-🔧 Testes cross-browser  
-🔧Rodar em WebKit e Firefox no CI  
+Contribuições são bem-vindas!  
+Abra uma Issue ou envie um Pull Request com melhorias, novos cenários ou exemplos de integração.
 
 ---
 
 ## 🤝 Boas práticas para contribuições:  
-
 📌 Escreva código limpo, legível e documentado.  
 📌 Teste suas mudanças antes de enviar o Pull Request.  
 📌 Mantenha a consistência com o estilo e padrões do projeto.  
@@ -133,6 +133,15 @@ Item	Descrição
 
 ---
 
-## 📄 Licença
+## 👩‍💻 Contato
+- Informações	
+- Nome	Leonardo da Motta Teixeira  
+- Cargo	QA Engineer / Gestor / Tester-Sênior  
+- LinkedIn	www.linkedin.com/in/leonardo-da-motta-teixeira-3584734b  
+- E-mail	lteixei@hotmail.com  
 
-Este projeto está licenciado sob a MIT License.
+---
+
+## 📝 Licença
+
+- Este projeto está licenciado sob a MIT License.

@@ -39,7 +39,6 @@ O objetivo é fornecer um ponto de partida completo para criação de testes aut
 ## 📦Criar e ativar o ambiente virtual:  
 ### Criar ambiente virtual
 python -m venv venv
-python -m venv venv
 
 ### Windows
 venv\Scripts\activate
@@ -49,12 +48,11 @@ source venv/bin/activate
 
 ---
 
-## 📦 Instalação - Dependências Python 
+## 📦 Instalação  
+### Instalação das Dependências Python 
 pip install playwright pytest  
 
----
-
-## 📦 Instalar os navegadores suportados 
+### Instalar os Navegadores Suportados 
 playwright install  
 
 ---
@@ -62,19 +60,13 @@ playwright install
 ## ▶️ Executando os Testes 
 pytest  
 
----
-
-## 📦 Especificar um arquivo de teste 
+### 📦 Especificar um arquivo de teste 
 pytest tests/test_login.py  
 
----
-
-## 📦 Executar testes em modo headless = false (exibir navegador) 
+### 📦 Executar testes em modo headless = false (exibir navegador) 
 pytest --headed  
 
----
-
-## 📦 Gerar relatório em HTML 
+### 📦 Gerar relatório em HTML 
 pytest --html=report.html  
 
 ---

@@ -119,6 +119,7 @@ Abra uma Issue ou envie um Pull Request com melhorias, novos cenários ou exempl
 ---
 
 ## 🤝 Boas práticas para contribuições:  
+
 📌 Escreva código limpo, legível e documentado.  
 📌 Teste suas mudanças antes de enviar o Pull Request.  
 📌 Mantenha a consistência com o estilo e padrões do projeto.  
@@ -127,7 +128,8 @@ Abra uma Issue ou envie um Pull Request com melhorias, novos cenários ou exempl
 ---
 
 ## 👩‍💻 Contato
-- Informações	
+
+- Informações:	
 - Nome	Leonardo da Motta Teixeira  
 - Cargo	QA Engineer / Gestor / Tester-Sênior  
 - LinkedIn	www.linkedin.com/in/leonardo-da-motta-teixeira-3584734b  

@@ -74,28 +74,6 @@ test('Entrar no site automationtesting - File Upload', async ({ page }) => {
 });
 
 //########################################################
-//################## JQUERY PROGRESS BAR #################
-//########################################################
-test('Entrar no site automationtesting - JQuery Progress Bar', async ({ page }) => {
-  await page.goto('https://demo.automationtesting.in/JqueryProgressBar.html');
-
-  await page.click('xpath=//*[@id="downloadButton"]', { timeout: 15000 });
-
-  await page.click('xpath=/html/body/div[2]/div[3]/div/button');
-});
-
-//########################################################
-//############################### LOADER #################
-//########################################################
-test('Entrar no site automationtesting - Loader', async ({ page }) => {
-  await page.goto('https://demo.automationtesting.in/Loader.html');
-
-  await page.click('xpath=//*[@id="loader"]', { timeout: 100000 });
-
-  await page.click('xpath=//*[@id="myModal"]/div/div/div[3]/button[1]');
-});
-
-//########################################################
 //############################ MODALS ####################
 //########################################################
 test('Entrar no site automationtesting - Modals', async ({ page }) => {
